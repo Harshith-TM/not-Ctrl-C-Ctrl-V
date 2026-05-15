@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/night"
+    android:gravity="center"
+    tools:context=".fragment_demo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/imperial"
+        android:fontFamily="@font/anton"
+        android:textSize="42sp"
+        android:text="@string/fragment_life_cycle" />
+
+    <!--Colors:
+night: #000F08
+imperial: #FB3640-->
+
+    <!--String: Fragment Life Cycle-->
+
+</LinearLayout>
