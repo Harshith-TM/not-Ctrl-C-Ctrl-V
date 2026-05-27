@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    tools:context=".linearLayoutExample">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/Linear_Layout"
+        android:textColor="@color/imperial"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/Vertical_Linear_Layout"
+        android:textColor="@color/imperial"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/TextView1"
+            android:textColor="@color/imperial"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/TextView2"
+            android:textColor="@color/imperial"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Button"
+            android:layout_margin="10dp"
+            android:textColor="@color/night"
+            android:textSize="18sp"
+            android:backgroundTint="@color/imperial"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/Horizontal_Linear_Layout"
+        android:textColor="@color/imperial"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/TextView1"
+            android:textColor="@color/imperial"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/TextView2"
+            android:textColor="@color/imperial"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Button"
+            android:layout_margin="10dp"
+            android:textColor="@color/night"
+            android:textSize="18sp"
+            android:backgroundTint="@color/imperial"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--Colors:
+        night: #000F08
+        imperial: #FB3640-->
+
+    <!--String:
+    <string name="Linear_Layout">Linear Layout</string>
+    <string name="Vertical_Linear_Layout">Vertical Linear Layout</string>
+    <string name="Horizontal_Linear_Layout">Horizontal Linear Layout</string>
+    <string name="TextView1">TextView 1</string>
+    <string name="TextView2">TextView 2</string>
+    <string name="Button">Button</string>-->
+
+    <!-- Linear Layout is a layout in android  xml used to arrange UI elements in a single row or column.
+    It places child views one after another. The 'orientation' attribute decides the direction or the arrangement.
+    orientation = vertical arranges the views from top to bottom and horizontal arranges the views from left to right.
+    To control the position of the text or child views we can use gravity attribute.
+    gravity attribute values are: center, left, right, top, bottom.
+    [Note: linear layout gravity attribute is different from XML attribute layout_gravity]-->
