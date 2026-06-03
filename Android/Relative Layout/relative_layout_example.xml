@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night"
+    android:padding="20dp"
+    tools:context=".relative_layout_example">
+
+    <TextView
+        android:id="@+id/Relative_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/Relative_Layout"
+        android:textColor="@color/imperial"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative_Layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/TextView1"
+        android:textColor="@color/imperial"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/TextView2"
+        android:textColor="@color/imperial"
+        android:textSize="32sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/imperial"
+        android:text="@string/Button"
+        android:textColor="@color/night"
+        android:textSize="32sp" />
+
+</RelativeLayout>
+
+    <!--Colors:
+        night: #000F08
+        imperial: #FB3640-->
+
+    <!--String:
+    <string name="Relative_Layout">Relative Layout</string>
+    <string name="TextView1">TextView 1</string>
+    <string name="TextView2">TextView 2</string>
+    <string name="Button">Button</string>-->
+
+    <!-- Relative Layout is a layout manager in Android XML that positions its child view
+    like buttons, view, text views etc relative to each other or the parent container itself.
+    Instead of just lining views in a horizontal or vertical way, we can use intuitive rules
+    like "place this button below this textview" or "place this imageview at the bottom of the
+    screen".
+    Note: Relative layout is useful for simple views, for complex or larger view recommended way
+    is Constraint Layout.-->
