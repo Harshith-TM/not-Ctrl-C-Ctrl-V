@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".listViewExample">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/ListView"
+        android:textAlignment="center"
+        android:textColor="@color/imperial"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/SimpleListView"
+            android:textColor="@color/imperial"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/SimpleListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:divider="@color/white_50"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/CustomListView"
+            android:textColor="@color/imperial"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/CustomListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:divider="@color/white_50"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--Colors:
+           night: #000F08
+           imperial: #FB3640
+           white_50: #80FFFFFF-->
+
+    <!--String:
+    <string name="ListView">List View</string>
+    <string name="SimpleListView">Simple List View</string>
+    <string name="CustomListView">Custom List View</string>-->
+
+    <!-- A ListView is an Android widget that displays a collection of items in a vertically
+    scrollable list and obtains its data from an adapter, which acts as a bridge between
+    the data source and the ListView. -->
